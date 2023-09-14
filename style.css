@@ -199,4 +199,11 @@ footer {
     section.second-img {
         font-size: 1.3rem;
     }
+    
+    section.first-section .main-info h2,
+    section.second-section .second-info h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    }
+
 }
