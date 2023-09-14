@@ -56,7 +56,12 @@ ul li a {
     font-weight: bold;
 }
 
-section.first-section {
+ul li a:hover {
+    color: #818755;
+}
+
+section.first-section,
+section.second-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,64 +69,97 @@ section.first-section {
     padding: 5.0rem 4.0rem 1.5rem 4.0rem;
 }
 
-section.first-section .svg-one {
-    width: 40vw;
-}
-
-section.first-section .main-info h2 {
-    font-size: 2.5rem;
-    color: var(--color-nine);
-    margin-bottom: 1.5rem;
-}
-
-section.first-section .main-info p {
-    font-size: 1.2rem;
-    color: var(--color-three);
-    margin-bottom: 1rem;
-    line-height: 2rem;
-}
-
-section.first-img {
-    background-image: url(images/image-one.jpg);
-    height: 600px;
-    margin: 5rem 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section.second-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
-    padding: 1.5rem 4.0rem 1.5rem 4.0rem;
-}
-
+section.first-section .svg-one,
 section.second-section .svg-two {
     width: 40vw;
 }
 
+section.first-section .main-info h2,
 section.second-section .second-info h2 {
     font-size: 2.5rem;
-    color: var(--color-three);
+    color: var(--color-nine);
     margin-bottom: 1.5rem;
 }
 
+section.first-section .main-info p,
 section.second-section .second-info p {
     font-size: 1.2rem;
-    color: var(--color-nine);
+    color: var(--color-three);
     margin-bottom: 1rem;
     line-height: 2rem;
 }
 
+section.first-img,
 section.second-img {
-    background-image: url(images/image-two.jpg);
-    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/image-one.jpg);
+    height: 450px;
     margin: 5rem 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--color-two);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.645);
+}
+
+section.second-section {
+    padding: 1.5rem 4.0rem 1.5rem 4.0rem;
+}
+
+section.second-section .second-info h2 {
+    color: var(--color-three);
+}
+
+section.second-section .second-info p {
+    color: var(--color-nine);
+}
+
+section.second-img {
+    background-image: url(images/image-two.jpg);
+    color: var(--color-ten);
+}
+
+section.blog-bttn {
+    background-color: var(--color-seven);
+    padding: 2.5rem;
+}
+
+.container-bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    color: var(--color-default);
+    text-transform: uppercase;
+    border: 2px solid var(--color-default);
+    border-radius: 1ch;
+}
+
+.container-bttn button.bttn {
+    background-color: var(--color-seven);
+    padding: 0.5rem;
+    font-weight: bold;
+    color: var(--color-default);
+    text-transform: uppercase;
+    border: 2px solid var(--color-default);
+    border-radius: 1ch;
+}
+
+.container-bttn button.bttn:hover {
+    background-color: var(--color-default);
+    color: var(--color-seven);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 5rem;
+    border-top: 1px solid black;
+    padding: 1rem;
+    text-align: center;
 }
